@@ -24,8 +24,8 @@ dataTestY <- read.table("./UCI HAR Dataset/test/Y_test.txt")
 dataTrainY <- read.table("./UCI HAR Dataset/train/Y_train.txt")
 
 #Load subject files
-datasubject <- read.table("./UCI HAR Dataset/test/subject_test.txt")
-data_train_subject <- read.table("./UCI HAR Dataset/train/subject_train.txt")
+dataTestSubject <- read.table("./UCI HAR Dataset/test/subject_test.txt")
+dataTrainSubject <- read.table("./UCI HAR Dataset/train/subject_train.txt")
 
 #1. Merging the training and the test sets to create one data set.
 #One data set for X
@@ -35,7 +35,7 @@ data_all_X <- rbind(dataTrainX, dataTestX)
 data_all_Y <- rbind(dataTrainY, dataTestY)
 
 #One data set for Subject
-data_all_subject <- rbind(data_train_subject, datasubject)
+data_all_subject <- rbind(dataTrainSubject, dataTestSubject)
 
 #2. Extract only the measurements on the mean and standard deviation for each measurement.
 #Load features.txt file

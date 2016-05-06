@@ -15,7 +15,7 @@ The script run_analysis.R performs all the 5 steps explained in the course proje
 5. Independent tidy dataset with mean value for each subject and activity is generated. The output file is `tidy_data.txt` and is available in this repo.
 
 ##Description of Variables
-1. data_test_X, data_test_Y, data_train_X, data_train_Y, data_test_subject and data_train_subject contain the data from the downloaded files.
+1. dataTestX, dataTestY, dataTestX, dataTrainY, dataTestSubject and dataTrainSubject contain the data from the downloaded files.
 2. data_all_X, data_all_Y and data_all_subject merge the previous datasets mentioned in 1.
 2. data_features contains the file `features.txt`. mean_std contains all the columns having literal 'mean' or 'std'. 
 3. data_activities contains the file `activity_labels.txt`. Correct activity name is updated from here.
